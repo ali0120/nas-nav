@@ -48,7 +48,7 @@ const BottomNav = () => {
                                     {name !== "Top Brands" && (
                                       <div className="single_category-inner-content">
                                         <h6 className="sublink_heading">
-                                          <Link to={link}>{name}</Link>
+                                          <Link to="/">{name}</Link>
                                         </h6>
                                         <ul>
                                           {sublink?.map(
@@ -59,7 +59,7 @@ const BottomNav = () => {
                                                   key={index}
                                                 >
                                                   <Link
-                                                    to={link}
+                                                    to="/"
                                                     className="sublink_link"
                                                   >
                                                     {name}
@@ -83,7 +83,7 @@ const BottomNav = () => {
                                   {name === "Top Brands" && (
                                     <div className="single_category-inner-content">
                                       <h6 className="sublink_heading">
-                                        <Link to={link}>{name}</Link>
+                                        <Link to="/">{name}</Link>
                                       </h6>
                                       <ul className={`brands-container`}>
                                         {isLoading ? (
@@ -101,7 +101,7 @@ const BottomNav = () => {
                                                   key={index}
                                                 >
                                                   {brandImgSrc?.length > 0 && (
-                                                    <Link to={link}>
+                                                    <Link to="/">
                                                       <img
                                                         src={brandImgSrc}
                                                         alt="brand"

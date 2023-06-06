@@ -61,7 +61,7 @@ const Accordion = ({ closeSidebar }) => {
                 {sublinks.map(({ Head }, index) => {
                   return (
                     <li key={index}>
-                      <Link to={Head.link} onClick={closeSidebar}>
+                      <Link to={'/'} onClick={closeSidebar}>
                         {Head.name}{" "}
                       </Link>
                     </li>
