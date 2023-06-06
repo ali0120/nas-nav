@@ -12,7 +12,7 @@
   height: 590px;
 }
 
-button {
+.product_images .image_container button {
   width: 64px;
   height: 67px;
   background-color: #FFFFFF;
