@@ -8,7 +8,7 @@ const MasterRoutes = () => {
 
     return useRoutes([
         {
-            path: '/',
+            path: 'nas-nav/',
             element: <Main />,
             children: [
                 { index: true, element: <SingleProduct /> },
