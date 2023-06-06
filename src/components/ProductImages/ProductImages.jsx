@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import leftArrow from './../../images/leftArrow.svg'
 import rightArrow from './../../images/rightArrow.svg'
+import icon360 from './../../images/simillarProduct/360.svg'
 
 import './ProductImages.css';
 
@@ -22,7 +23,12 @@ const ProductImages = ({ images = [{ url: '' }] }) => {
 
     return (
         <section className='product_images'>
-            <img src={main.url} alt='' className='main' />
+            <div className='image_container'>
+                <img src={main.url} alt='' className='main' />
+                <button>
+                    <img className='icon' src={icon360} alt="360 icon" />
+                </button>
+            </div>
             <div className='gallery'>
                 <button className='left' onClick={handlePrev}><img src={leftArrow} alt='' /></button>
                 {images.map((image, index) => (
