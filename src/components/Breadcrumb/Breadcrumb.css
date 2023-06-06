@@ -1,0 +1,30 @@
+.bread_crumb {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 0.5px solid #575756;
+    position: relative;
+}
+
+.bread_crumb::after {
+    position: absolute;
+    content: "";
+    width: 6000px;
+    height: 0.5px;
+    background-color: #575756;
+    left: -3000px;
+    top: 100%;
+}
+
+.bread_crumb h3 {
+    color: #1D1D1B;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width:767px) {
+    .bread_crumb h3 {
+        font-size: 12px;
+    }
+}

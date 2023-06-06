@@ -1,0 +1,222 @@
+.product_description {
+    position: relative;
+}
+
+@media (min-width:991px) {
+    .product_description {
+        width: 50%;
+    }
+
+}
+
+.product_description button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.product_description .product_name {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1D1D1B;
+}
+
+.product_description .product_category,
+.product_description .price_container strike {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #A7A9AC;
+}
+
+.product_description .rates {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.product_description .rates p {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #575756;
+}
+
+.product_description .star-rating {
+    gap: 16px;
+}
+
+.product_description .star-rating .rating {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.product_description .price_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product_description .price_container {
+    border-bottom: .5px solid #D9D9D9;
+    padding-bottom: 20px;
+}
+
+.product_description .price_container .price {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.product_description .price_container .sale_container {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.product_description .price_container .precentage {
+    width: 75px;
+    height: 25px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product_description .size_options {
+    margin: 25px 0;
+    padding-bottom: 20px;
+    border-bottom: .5px solid #D9D9D9;
+
+}
+
+.product_description h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1D1D1B;
+    margin-bottom: 10px;
+}
+
+.product_description .size_options ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.product_description .size_options ul li button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.product_description .size_options ul li button.active {
+    border: none;
+    background-color: #ECECEC;
+    color: #1D1D1B;
+}
+
+.product_description .colors {
+    margin-bottom: 25px;
+    border-bottom: .5px solid #D9D9D9;
+    padding-bottom: 20px;
+}
+
+.product_description .colors .colors_options {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.product_description .colors button {
+    border-radius: 50%;
+    border: none;
+}
+
+.product_description .colors button.active {
+    border: 1px solid var(--secondary-color);
+}
+
+.product_description .quantity {
+    margin-bottom: 25px;
+}
+
+.product_description .quantity .quantity_container {
+    width: 252px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    border-color: #D9D9D9;
+    border-radius: 50px;
+    padding: 2px 6px;
+}
+
+.product_description .quantity .quantity_container button {
+    height: 37px;
+    width: 37px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_description .quantity .quantity_container span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.product_description .action_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product_description .action_container button {
+    width: 48%;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+}
+
+.product_description .action_container button.add {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.product_description .action_container button.pick {
+    background-color: var(--primary-color);
+    color: #000000;
+}
+
+@media(max-width:767px) {
+    .product_description .action_container button {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:350px) {
+    .product_description .action_container button {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,106 @@
+.uppernav {
+    background-color: var(--primary-color);
+}
+
+.uppernav .uppernav_inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.uppernav .uppernav_inner .uppernav_menuBrandWrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    height: 50px;
+}
+
+.uppernav .uppernav_inner .uppernav_menuBrandWrapper button {
+    font-size: 24px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.uppernav .uppernav_inner .uppernav_offers {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.uppernav .uppernav_inner .uppernav_offers .bold {
+    font-weight: 700;
+    text-decoration: underline !important;
+}
+
+.uppernav .uppernav_inner .uppernav_info-containers {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.uppernav .uppernav_inner .uppernav_info-containers li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.uppernav .uppernav_inner .uppernav_info-containers li h3 {
+    font-size: 14px;
+}
+
+@media (max-width:991px) {
+
+    .uppernav .uppernav_inner .middlenav {
+        display: block;
+    }
+
+    .uppernav .uppernav_inner .middlenav form {
+        width: 213px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .uppernav .uppernav_inner .middlenav .middlenav_inner {
+        gap: 40px;
+    }
+
+    .uppernav .uppernav_inner .middlenav .middlenav_inner .middlenav_info-containers {
+        gap: 15px;
+    }
+
+    .uppernav .uppernav_inner .middlenav .middlenav_inner .middlenav_info-containers li h3 {
+        display: none;
+    }
+
+    .uppernav .uppernav_inner .uppernav_offers,
+    .uppernav .uppernav_inner .middlenav_brand,
+    .uppernav .uppernav_inner .uppernav_info-containers {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .uppernav .uppernav_inner .middlenav form {
+        display: none;
+    }
+}
+
+@media (min-width:991px) {
+    .uppernav .uppernav_inner .middlenav {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .uppernav .uppernav_inner .uppernav_offers,
+    .uppernav .uppernav_inner .uppernav_info-containers {
+        gap: 4px;
+    }
+}

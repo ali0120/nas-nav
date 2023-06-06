@@ -1,0 +1,11 @@
+.single_product-container {
+    display: flex;
+    gap: 65px;
+    margin-top: 50px;
+}
+
+@media(max-width:991px) {
+    .single_product-container {
+        flex-direction: column;
+    }
+}

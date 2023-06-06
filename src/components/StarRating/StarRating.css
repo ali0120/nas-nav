@@ -1,0 +1,17 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 13px 0;
+}
+
+.star-rating .stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star-rating .rating {
+    font-size: 14px;
+    font-weight: 600;
+}

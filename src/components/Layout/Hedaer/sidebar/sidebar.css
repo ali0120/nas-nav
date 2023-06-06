@@ -1,0 +1,119 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background-color: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  transition: 0.5s ease-in-out;
+  z-index: 223;
+  overflow-y: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.63);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.5s;
+  visibility: hidden;
+}
+
+.overlay.visible {
+  opacity: 0.4;
+  visibility: visible;
+}
+
+.overlay.invisible {
+  opacity: 0;
+}
+
+.sidebar.visible {
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.sidebar.invisible {
+  left: -100%;
+  transition: 0.5s ease-in-out;
+}
+
+.sidebar_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar_top button.close {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+/* accordion style */
+.accordion_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-top: 0.5px solid #d9d9d9;
+}
+
+.accordion {
+  margin-top: 50px;
+}
+
+.accordion_heading h3 {
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.accordion_inner li {
+  border-top: 0.5px solid #d9d9d9;
+}
+
+.accordion_heading h3:hover {
+  color: #706f6f;
+}
+
+.accordion_inner li a {
+  color: #706f6f;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.accordion_inner li a:hover {
+  color: #000;
+}
+
+.accordion_btn {
+  width: 25px;
+  cursor: pointer;
+  height: 25px;
+  border-radius: 50%;
+  outline: none;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+}

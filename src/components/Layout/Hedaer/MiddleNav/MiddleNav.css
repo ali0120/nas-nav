@@ -1,0 +1,97 @@
+.middlenav .middlenav_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 84px;
+}
+
+.middlenav .middlenav_inner form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid #D8D8D8;
+    border-radius: 50px;
+    position: relative;
+    width: 350px;
+    height: 48px;
+}
+
+.middlenav .middlenav_inner form input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.middlenav .middlenav_inner form input[type="search"]::placeholder {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.middlenav .middlenav_inner form button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent url("./../../../../images/middleNav/searchIcon.svg") no-repeat center;
+    cursor: pointer;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.middlenav .middlenav_inner .middlenav_info-containers {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.middlenav .middlenav_inner .middlenav_info-containers li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.middlenav .middlenav_inner .middlenav_info-containers li .icon_container {
+    position: relative;
+}
+
+.middlenav .middlenav_inner .middlenav_info-containers li .icon_container .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    font-weight: 700;
+    padding: 0px;
+    color: #3C3C3B;
+    font-size: 12px;
+    position: absolute;
+    top: 20%;
+    right: -5px;
+    transform: translateY(-50%);
+}
+
+.middlenav .middlenav_inner .middlenav_info-containers li h3 {
+    font-size: 14px;
+}
+
+
+@media (max-width:991px){
+    .middlenav{
+        display: none;
+    }
+}
